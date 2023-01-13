@@ -1,2 +1,3 @@
 # league_champion_visualizer
-Visualizes league of legends champion stats, single page application
+
+Champion Analytics is a comprehensive data visualization tool designed for the popular MOBA game, League of Legends. By leveraging data from Riot Games' ddragon API, it offers a thorough and insightful representation of champion statistics, lore, abilities, and descriptions. The user experience is enhanced through the ability to interact with the visualizer by selecting a champion level between 1 and 18, resulting in real-time updates to the champion's statistics. Additionally, the visualizer includes a feature that allows the user to select up to six items and observe the corresponding dynamic updates to the champion's statistics. Among its various capabilities, the visualizer also offers video demonstrations of champion abilities, as well as a dedicated section displaying the champion's various skins.
