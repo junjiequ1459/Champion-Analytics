@@ -10,10 +10,11 @@ const championApiUrl =
 const itemApiUrl =
   "https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/item.json";
 
-let champName = "Blitzcrank";
-let itemName = "3068"; //sunfire cape
+let champtionName = "Kaisa";
+// let itemName = "3068"; //sunfire cape
 
-export function displayStatAndItem() {
+
+export function displayStatAndItem(champName) {
   fetch(championApiUrl)
     .then((response) => response.json())
     .then((data) => {
@@ -25,15 +26,14 @@ export function displayStatAndItem() {
         .then((data) => {
           buttonClick(champData, champName);
           changeStatByLevel(champStatData);
-          let itemData = data.data[itemName].stats;
-          let sunfire = document.querySelector("#sunfire");
+          // let itemData = data.data[itemName].stats;
+          // let sunfire = document.querySelector("#sunfire");
 
-          sunfire.addEventListener("click", function () {
-            let select = document.querySelector("#number-select");
-            let tempObj = { ...champStatData };
-            console.log(changeStatByLevel(champStatData));
-            changeStatByItem(addStats(tempObj, select.value), itemData);
-          });
+          // sunfire.addEventListener("click", function () {
+          //   let select = document.querySelector("#number-select");
+          //   let tempObj = { ...champStatData };
+          //   changeStatByItem(addStats(tempObj, select.value), itemData);
+          // });
           statChart(
             champStatData.attackdamage,
             champStatData.armor,

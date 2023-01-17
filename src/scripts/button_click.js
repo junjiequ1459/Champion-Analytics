@@ -7,6 +7,8 @@ export function buttonClick(json, champName) {
   passive.addEventListener("click", function () {
     document.querySelector(".ability_description").innerText =
       json.data[champName].passive.description;
+    document.querySelector(".ability_name").innerText =
+      json.data[champName].passive.name;
     source.src = `https://d28xe8vt774jo5.cloudfront.net/champion-abilities/${champKey}/ability_${champKey}_P1.webm`;
     videoSource.load();
   });
@@ -14,6 +16,8 @@ export function buttonClick(json, champName) {
   abilityQ.addEventListener("click", function () {
     document.querySelector(".ability_description").innerText =
       json.data[champName].spells["0"].description;
+    document.querySelector(".ability_name").innerText =
+      json.data[champName].spells["0"].name;
     source.src = `https://d28xe8vt774jo5.cloudfront.net/champion-abilities/${champKey}/ability_${champKey}_Q1.webm`;
     videoSource.load();
   });
@@ -21,6 +25,8 @@ export function buttonClick(json, champName) {
   abilityW.addEventListener("click", function () {
     document.querySelector(".ability_description").innerText =
       json.data[champName].spells["1"].description;
+    document.querySelector(".ability_name").innerText =
+      json.data[champName].spells["1"].name;
     source.src = `https://d28xe8vt774jo5.cloudfront.net/champion-abilities/${champKey}/ability_${champKey}_W1.webm`;
     videoSource.load();
   });
@@ -28,6 +34,8 @@ export function buttonClick(json, champName) {
   abilityE.addEventListener("click", function () {
     document.querySelector(".ability_description").innerText =
       json.data[champName].spells["2"].description;
+    document.querySelector(".ability_name").innerText =
+      json.data[champName].spells["2"].name;
     source.src = `https://d28xe8vt774jo5.cloudfront.net/champion-abilities/${champKey}/ability_${champKey}_E1.webm`;
 
     videoSource.load();
@@ -36,6 +44,8 @@ export function buttonClick(json, champName) {
   abilityR.addEventListener("click", function () {
     document.querySelector(".ability_description").innerText =
       json.data[champName].spells["3"].description;
+    document.querySelector(".ability_name").innerText =
+      json.data[champName].spells["3"].name;
     source.src = `https://d28xe8vt774jo5.cloudfront.net/champion-abilities/${champKey}/ability_${champKey}_R1.webm`;
     videoSource.load();
   });

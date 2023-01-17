@@ -1,7 +1,7 @@
 .canvas_container {
   position: absolute;
-  width: 60vw;
-  top: 140vh;
+  width: 50vw;
+  top: 135vh;
   left: -13vw;
 }
 
@@ -9,4 +9,10 @@
   position: absolute;
   top: 160vh;
   left: 30vw;
+}
+
+#number-select {
+  position: absolute;
+  top: 160vh;
+  right: 45vw;
 }

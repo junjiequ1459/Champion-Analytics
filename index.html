@@ -10,10 +10,20 @@
     <title>Champion Analytics</title>
   </head>
   <body>
+    <form>
+      <input type="text" id="search-input" />
+      <input type="submit" value="Search" />
+    </form>
+
     <div class="main_image_container">
       <img id="main_img" src="" alt="" />
       <img id="backround_img" src="" alt="" />
     </div>
+    <img
+      id="final_backround_img"
+      src="http://m.gettywallpapers.com/wp-content/uploads/2021/07/4k-League-Of-Legends-Wallpaper.jpg"
+      alt=""
+    />
 
     <div class="header_container">
       <h2 id="title_nick"></h2>
@@ -46,7 +56,7 @@
         <img id="R_icon" src="" alt="Button Image" />
       </div>
     </div>
-
+    <h3 class="ability_name"></h3>
     <p class="ability_description"></p>
 
     <video autoplay loop muted="" id="ability_video">
@@ -57,12 +67,12 @@
 
     <p id="champ-stats"></p>
 
-    <button id="sunfire">
+    <!-- <button id="sunfire">
       <img
         src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/item/3068.png"
         alt=""
       />
-    </button>
+    </button> -->
     <div class="canvas_container">
       <canvas id="statChart"></canvas>
     </div>
@@ -71,24 +81,24 @@
         <th>Header 1</th>
       </tr>
       <tr>
-        <td>Health</td>
-        <td>Mana</td>
+        <td id="c_health"></td>
+        <td id="c_mana"></td>
       </tr>
       <tr>
-        <td>Health Regen</td>
-        <td>Mana Regen</td>
+        <td id="c_health_regen"></td>
+        <td id="c_mana_regen"></td>
       </tr>
       <tr>
-        <td>Armor</td>
-        <td>Attack Damage</td>
+        <td id="c_armor"></td>
+        <td id="c_attack_damage"></td>
       </tr>
       <tr>
-        <td>Magic Resist</td>
-        <td>Crit</td>
+        <td id="c_magic_resist"></td>
+        <td id="c_crit"></td>
       </tr>
       <tr>
-        <td>Move Speed</td>
-        <td>Attack range</td>
+        <td id="c_move_speed"></td>
+        <td id="c_attack_range"></td>
       </tr>
     </table>
   </body>

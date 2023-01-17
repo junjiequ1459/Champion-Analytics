@@ -6,6 +6,7 @@ h2 {
   font-size: 2vw;
   font-family: sans-serif;
   font-style: italic;
+  color: white;
 }
 
 h1 {
@@ -20,13 +21,22 @@ h1 {
   font-family: serif;
   white-space: nowrap;
 }
-
-.description {
-  margin-top: 100px;
-  padding: 10px;
-  border: 1px solid black;
+body {
+  margin: 0;
+  color: white;
 }
 
-.ability_description {
-  color: red($color: #000000);
+.description {
+  top: 85vh;
+  position: absolute;
+  border-color: white;
+  left: 25vw;
+  width: 50%;
+  z-index: 1;
+}
+
+.ability_name {
+  position: absolute;
+  top: 124vh;
+  left: 22vw;
 }
