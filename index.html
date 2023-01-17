@@ -10,69 +10,86 @@
     <title>Champion Analytics</title>
   </head>
   <body>
-    <img
-      src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_0.jpg"
-      alt=""
-    />
+    <div class="main_image_container">
+      <img id="main_img" src="" alt="" />
+      <img id="backround_img" src="" alt="" />
+    </div>
+
+    <div class="header_container">
+      <h2 id="title_nick"></h2>
+      <h1 id="title_champ"></h1>
+      <div class="description">
+        <p id="champ_description"></p>
+      </div>
+    </div>
+
+    <div class="ability_container">
+      <div class="circle-button-container">
+        <div class="circle-button" id="passive"></div>
+        <img id="passive_icon" src="" alt="Button Image" />
+      </div>
+
+      <div class="circle-button-container">
+        <div class="circle-button" id="abilityQ"></div>
+        <img id="Q_icon" src="" alt="Button Image" />
+      </div>
+      <div class="circle-button-container">
+        <div class="circle-button" id="abilityW"></div>
+        <img id="W_icon" src="" alt="Button Image" />
+      </div>
+      <div class="circle-button-container">
+        <div class="circle-button" id="abilityE"></div>
+        <img id="E_icon" src="" alt="Button Image" />
+      </div>
+      <div class="circle-button-container">
+        <div class="circle-button" id="abilityR"></div>
+        <img id="R_icon" src="" alt="Button Image" />
+      </div>
+    </div>
+
+    <p class="ability_description"></p>
+
+    <video autoplay loop muted="" id="ability_video">
+      <source id="source" src="" type="video/webm" />
+    </video>
+
+    <select id="number-select"></select>
+
+    <p id="champ-stats"></p>
+
     <button id="sunfire">
       <img
         src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/item/3068.png"
         alt=""
       />
     </button>
-
-    <select id="number-select"></select>
-    <p id="champ-stats"></p>
-    <p id="champ_description"></p>
-
-    <div class="circle-button-container">
-      <div class="circle-button" id="passive"></div>
-      <img
-        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/passive/MasterYi_Passive1.png"
-        alt="Button Image"
-      />
+    <div class="canvas_container">
+      <canvas id="statChart"></canvas>
     </div>
-
-    <div class="circle-button-container">
-      <div class="circle-button" id="abilityQ"></div>
-      <img
-        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/AlphaStrike.png"
-        alt="Button Image"
-      />
-    </div>
-    <div class="circle-button-container">
-      <div class="circle-button" id="abilityW"></div>
-      <img
-        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/Meditate.png"
-        alt="Button Image"
-      />
-    </div>
-    <div class="circle-button-container">
-      <div class="circle-button" id="abilityE"></div>
-      <img
-        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/WujuStyle.png"
-        alt="Button Image"
-      />
-    </div>
-    <div class="circle-button-container">
-      <div class="circle-button" id="abilityR"></div>
-      <img
-        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/Highlander.png"
-        alt="Button Image"
-      />
-    </div>
-
-    <p class="ability_description">
-      "Every few consecutive basic attack, Master Yi strikes twice."
-    </p>
-
-    <video autoplay muted="" id="ability_video">
-      <source
-        id="source"
-        src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0011/ability_0011_E1.webm"
-        type="video/webm"
-      />
-    </video>
-    <canvas id="statChart"></canvas>
+    <table class="table">
+      <tr>
+        <th>Header 1</th>
+      </tr>
+      <tr>
+        <td>Health</td>
+        <td>Mana</td>
+      </tr>
+      <tr>
+        <td>Health Regen</td>
+        <td>Mana Regen</td>
+      </tr>
+      <tr>
+        <td>Armor</td>
+        <td>Attack Damage</td>
+      </tr>
+      <tr>
+        <td>Magic Resist</td>
+        <td>Crit</td>
+      </tr>
+      <tr>
+        <td>Move Speed</td>
+        <td>Attack range</td>
+      </tr>
+    </table>
   </body>
 </html>

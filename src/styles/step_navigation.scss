@@ -28,6 +28,17 @@
 }
 
 .circle-button:active {
-    background-color: orange;
+  background-color: orange;
 }
 
+.ability_container {
+  position: absolute;
+  top: 110vh;
+  left: 15vw;
+}
+
+.ability_description {
+  position: absolute;
+  top: 130vh;
+  left: 15vw;
+}

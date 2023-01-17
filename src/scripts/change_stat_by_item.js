@@ -20,6 +20,7 @@ function changeStatByItem(champstat, itemStat) {
   }
 
   document.querySelector("#champ-stats").innerText = JSON.stringify(dupObj);
+  return dupObj;
 }
 
 export default changeStatByItem;

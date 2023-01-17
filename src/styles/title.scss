@@ -1,0 +1,32 @@
+h2 {
+  position: absolute;
+  top: 66vh;
+  left: 40vw;
+  white-space: nowrap;
+  font-size: 2vw;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+h1 {
+  position: absolute;
+  top: 70vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  font-size: 6vw;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: serif;
+  white-space: nowrap;
+}
+
+.description {
+  margin-top: 100px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.ability_description {
+  color: red($color: #000000);
+}
