@@ -1,5 +1,3 @@
-import changeStatByLevel from "./change_stat_by_level";
-
 function changeStatByItem(champstat, itemStat) {
   let dupObj = { ...champstat };
 

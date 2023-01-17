@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/main.css" />
     <script src="./dist/main.js" defer></script>
-    <title>Chanpion Analytics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <title>Champion Analytics</title>
   </head>
   <body>
-    <div id="root"></div>
+    
     <button id="sunfire">Add SunfireCape</button>
     <select id="number-select"></select>
     <p id="champ-stats"></p>
@@ -18,7 +19,7 @@
     <div class="circle-button-container">
       <div class="circle-button" id="passive"></div>
       <img
-        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/passive/Kaisa_Passive.png"
+        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/passive/MasterYi_Passive1.png"
         alt="Button Image"
       />
     </div>
@@ -26,32 +27,43 @@
     <div class="circle-button-container">
       <div class="circle-button" id="abilityQ"></div>
       <img
-        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/KaisaQ.png"
+        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/AlphaStrike.png"
         alt="Button Image"
       />
     </div>
     <div class="circle-button-container">
       <div class="circle-button" id="abilityW"></div>
       <img
-        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/KaisaW.png"
+        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/Meditate.png"
         alt="Button Image"
       />
     </div>
     <div class="circle-button-container">
       <div class="circle-button" id="abilityE"></div>
       <img
-        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/KaisaE.png"
+        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/WujuStyle.png"
         alt="Button Image"
       />
     </div>
     <div class="circle-button-container">
       <div class="circle-button" id="abilityR"></div>
       <img
-        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/KaisaR.png"
+        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/Highlander.png"
         alt="Button Image"
       />
     </div>
 
-    <p class="ability_description"></p>
+    <p class="ability_description">
+      "Every few consecutive basic attack, Master Yi strikes twice."
+    </p>
+
+    <video autoplay muted="" id="ability_video">
+      <source
+        id="source"
+        src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0011/ability_0011_E1.webm"
+        type="video/webm"
+      />
+    </video>
+    <canvas id="statChart"></canvas>
   </body>
 </html>
