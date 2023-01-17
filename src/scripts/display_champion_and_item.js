@@ -13,7 +13,6 @@ const itemApiUrl =
 let champtionName = "Kaisa";
 // let itemName = "3068"; //sunfire cape
 
-
 export function displayStatAndItem(champName) {
   fetch(championApiUrl)
     .then((response) => response.json())
@@ -35,9 +34,9 @@ export function displayStatAndItem(champName) {
           //   changeStatByItem(addStats(tempObj, select.value), itemData);
           // });
           statChart(
-            champStatData.attackdamage,
-            champStatData.armor,
-            champStatData.spellblock
+            champData.data[champName].info.attack,
+            champData.data[champName].info.defense,
+            champData.data[champName].info.magic
           );
         });
     });
