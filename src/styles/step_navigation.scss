@@ -1,0 +1,29 @@
+.circle-button-container {
+  position: relative;
+  margin-top: 100px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+.circle-button {
+  position: absolute;
+  top: 20;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.circle-button-container img {
+  position: absolute;
+  top: -80px;
+  width: 100%;
+}
+
+.circle-button:hover + img {
+  top: -85px;
+  transition: top 0.2s ease-in-out;
+}
+
