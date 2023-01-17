@@ -1,4 +1,6 @@
 export function buttonClick(json, champName) {
+  const videoSource = document.querySelector("#ability_video");
+  const source = document.querySelector("source");
   passive.addEventListener("click", function () {
     document.querySelector(".ability_description").innerText = JSON.stringify(
       json.data[champName].passive.description

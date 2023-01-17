@@ -2,8 +2,7 @@ import { changeStatByLevel } from "./change_stat_by_level";
 import { addStats } from "./change_stat_by_level";
 import changeStatByItem from "./change_stat_by_item";
 import { buttonClick } from "./button_click";
-import { StatChart } from "./charts";
-
+import { statChart } from "./charts";
 
 const championApiUrl =
   "https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/championFull.json";
@@ -37,8 +36,12 @@ export function displayStatAndItem() {
             console.log(changeStatByLevel(champStatData));
             changeStatByLevel;
             changeStatByItem(addStats(tempObj, select.value), itemData);
-            StatChart();
           });
+          statChart(
+            champStatData.attackdamage,
+            champStatData.armor,
+            champStatData.spellblock
+          );
         });
     });
 }

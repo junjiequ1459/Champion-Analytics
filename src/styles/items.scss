@@ -1,0 +1,11 @@
+#sunfire {
+  padding: 30px 30px; /* adjust as needed */
+  position: relative;
+}
+
+#sunfire img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
