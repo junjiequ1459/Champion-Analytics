@@ -3,24 +3,25 @@ import createDropDown from "./scripts/create_dropdown_menu";
 import { changeStatByLevel } from "./scripts/change_stat_by_level";
 import { addStats } from "./scripts/change_stat_by_level";
 import changeStatByItem from "./scripts/change_stat_by_item";
-const apiUrl =
+const championApiUrl =
   "https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/championFull.json";
-let champName = "Veigar";
+const itemApiUrl =
+  "https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/item.json";
+let champName = "Nami";
 let itemName = "3068"; //sunfire cape
 
 createDropDown();
 
-fetch(apiUrl)
+fetch(championApiUrl)
   .then((response) => response.json())
   .then((data) => {
     let champStatData = data.data[champName].stats;
     document.querySelector("#champ-stats").innerText =
       JSON.stringify(champStatData);
-    fetch("https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/item.json")
+    fetch(itemApiUrl)
       .then((response) => response.json())
       .then((data) => {
         changeStatByLevel(champStatData);
-
         let itemData = data.data[itemName].stats;
         let sunfire = document.querySelector("#sunfire");
 
