@@ -29,9 +29,38 @@ input[type="text"] {
   z-index: 1;
 }
 
+.fa-magnifying-glass:hover {
+  cursor: pointer;
+}
+
 .fa-arrows-rotate {
   position: fixed;
   margin-top: 10px;
   margin-left: 285px;
   z-index: 2;
+}
+
+.fa-arrows-rotate:hover {
+  cursor: pointer;
+}
+
+.fa-question {
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 99%;
+  z-index: 2;
+}
+
+#help_paragraph {
+  position: fixed;
+  margin-left: 70%;
+  color: transparent;
+  z-index: 2;
+}
+
+#help_paragraph:hover {
+  color: white;
+  background-color: darkorange;
+  border-radius: 10px;
+  padding: 10px;
 }

@@ -1,0 +1,27 @@
+#button_skin_container {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+#skin_container {
+  position: absolute;
+  top: 203vh;
+  left:20vw;
+}
+.skin_button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-color: orange;
+}
+
+.skin_button:hover {
+  background-color: darkorange;
+  cursor: pointer;
+}
+
+#champ_skin {
+    height: auto;
+    width: 100%;
+}
