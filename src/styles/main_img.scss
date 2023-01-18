@@ -1,16 +1,14 @@
 #main_img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 75vh;
-  width: 60vw;
+  margin: 0 auto;
+  max-width: 100%; /* optional */
 }
 
 #backround_img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 104%;
   height: 80vh;
   background-size: cover;
   filter: blur(8px);
@@ -20,7 +18,8 @@
 }
 
 #final_backround_img {
+  height: 110vh;
+  width: 104vw;
   filter: brightness(10%);
   z-index: -1;
-  box-shadow: 0 0 0px transparent;
 }

@@ -1,5 +1,37 @@
 #form_container {
   float: left;
   width: 10vw;
-  
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex: 1;
+  margin-top: 30px;
+  padding: 5px;
+  border-radius: 25px;
+  font-size: 16px;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-width: 5px;
+  border-color: orange;
+  color: white;
+}
+
+.fa-magnifying-glass {
+  position: fixed;
+  margin-top: 30px;
+  margin-left: 240px;
+  z-index: 1;
+}
+
+.fa-arrows-rotate {
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 285px;
+  z-index: 2;
 }

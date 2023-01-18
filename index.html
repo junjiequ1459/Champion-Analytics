@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/main.css" />
+    <script
+      src="https://kit.fontawesome.com/8f8e6fbefd.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./dist/main.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <title>Champion Analytics</title>
@@ -12,10 +16,11 @@
   <body>
     <div id="form_container">
       <form>
-        <input type="text" id="search-input" />
-        <input type="submit" value="Search" />
+        <input type="text" id="search-input" value="" />
+        <i class="fa-solid fa-magnifying-glass"></i>
       </form>
     </div>
+    <i class="fa-solid fa-arrows-rotate"></i>
     <div class="main_image_container">
       <img id="main_img" src="" alt="" />
       <img id="backround_img" src="" alt="" />
@@ -61,7 +66,7 @@
     <p class="ability_description"></p>
 
     <video autoplay loop muted="" id="ability_video">
-      <source id="source" src="" type="video/webm" />
+      <source id="source" src="" type="video/webm" alt="No-Video" />
     </video>
 
     <select id="number-select"></select>
@@ -79,7 +84,7 @@
     </div>
     <table class="table">
       <tr>
-        <th>Header 1</th>
+        <th>Champion Stats</th>
       </tr>
       <tr>
         <td id="c_health"></td>

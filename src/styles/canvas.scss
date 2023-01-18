@@ -13,6 +13,12 @@
 
 #number-select {
   position: absolute;
-  top: 160vh;
-  right: 45vw;
+  top: 155vh;
+  right: 40vw;
+  background-color: #333; /* black */
+  color: #fff; /* white */
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }

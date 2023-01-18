@@ -22,13 +22,16 @@
   width: 100%;
 }
 
+.circle-button:hover {
+  background-color: orange;
+}
 .circle-button:hover + img {
   top: -85px;
   transition: top 0.2s ease-in-out;
 }
 
 .circle-button:active {
-  background-color: orange;
+  background-color: darkorange;
 }
 
 .ability_container {

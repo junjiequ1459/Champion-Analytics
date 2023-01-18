@@ -10,9 +10,8 @@ export function allQuerys(champData, champName) {
     champData.data[champName].id;
   document.querySelector("#title_nick").innerText =
     champData.data[champName].title;
-  document.querySelector("#champ_description").innerText = JSON.stringify(
-    champData.data[champName].lore
-  );
+  document.querySelector("#champ_description").innerText =
+    champData.data[champName].lore;
 
   document.querySelector("#c_health").innerText = `Health : ${JSON.stringify(
     champStat.hp
