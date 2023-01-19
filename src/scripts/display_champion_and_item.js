@@ -10,8 +10,8 @@ import { skinButtonClick } from "./skin_button_click";
 
 const championApiUrl =
   "https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/championFull.json";
-const itemApiUrl =
-  "https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/item.json";
+// const itemApiUrl =
+//   "https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/item.json";
 
 // let champtionName = "Kaisa";
 // let itemName = "3068"; //sunfire cape
@@ -49,7 +49,7 @@ export function displayStatAndItem(champName) {
         // sunfire.addEventListener("click", function () {
         // });
       } catch (error) {
-        alert("Champion does not Exist");
+        alert("Champion does not exist, check for capitalization? ❤");
       }
     });
   return allChampArray;

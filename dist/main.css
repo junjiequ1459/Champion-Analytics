@@ -44,12 +44,12 @@ input[type=text] {
 }
 
 @media (max-width: 720px) {
-  .fa-linkedin {
+  .linkedin_link {
     display: none;
   }
 }
 @media (max-width: 720px) {
-  .fa-github {
+  .github_link {
     display: none;
   }
 }
@@ -328,11 +328,10 @@ body {
 
 .table {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-left: -6%;
+  margin-left: 40%;
   margin-right: 10%;
 }
 

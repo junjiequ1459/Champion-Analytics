@@ -12,10 +12,18 @@ let result = displayStatAndItem(champName);
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   const searchInput = document.querySelector("#search-input");
-  champName = searchInput.value.toLowerCase();
-  let cleanChampName = champName[0].toUpperCase() + champName.slice(1);
+  champName = searchInput.value; // .toLowerCase();
+  // let cleanChampName = champName[0].toUpperCase() + champName.slice(1);
+  // if (cleanChampName === "Wukong") {
+  //   cleanChampName = "MonkeyKing";
+  // }
+
+  if (champName === "Wukong") {
+    champName = "MonkeyKing";
+  }
+
   createDropDown();
-  displayStatAndItem(cleanChampName);
+  displayStatAndItem(champName);
   remove_button();
 });
 

@@ -5,8 +5,13 @@ export function allQuerys(champData, champName) {
   let passive = champData.data[champName].passive.image.full;
 
   let champKey = strNum.padStart(4, "0");
-  document.querySelector("#title_champ").innerText =
-    champData.data[champName].id;
+
+  if (champName === "MonkeyKing") {
+    document.querySelector("#title_champ").innerText = "WuKong";
+  } else {
+    document.querySelector("#title_champ").innerText =
+      champData.data[champName].id;
+  }
   document.querySelector("#title_nick").innerText =
     champData.data[champName].title;
   document.querySelector("#champ_description").innerText =
@@ -76,5 +81,4 @@ export function allQuerys(champData, champName) {
 
   document.querySelector(".ability_name").innerText =
     champData.data[champName].passive.name;
-    
 }
