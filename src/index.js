@@ -22,9 +22,9 @@ form.addEventListener("submit", function (event) {
     champName = "MonkeyKing";
   }
 
-  createDropDown();
   displayStatAndItem(champName);
   remove_button();
+  searchInput.value = "";
 });
 
 refresh.addEventListener("click", function (event) {
