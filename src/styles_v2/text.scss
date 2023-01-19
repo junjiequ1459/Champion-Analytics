@@ -39,6 +39,11 @@ body {
   margin-bottom: 180px;
   margin-left: 15%;
 }
+@media (max-width: 720px) {
+  .ability_name {
+    margin-left: 7%;
+  }
+}
 
 .ability_description {
   margin-left: -37%;
@@ -105,5 +110,6 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 30%;
+    margin-bottom: 25%;
   }
 }

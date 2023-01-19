@@ -166,6 +166,11 @@ body {
   margin-left: 15%;
 }
 
+@media (max-width: 720px) {
+  .ability_name {
+    margin-left: 7%;
+  }
+}
 .ability_description {
   margin-left: -37%;
 }
@@ -230,6 +235,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 30%;
+    margin-bottom: 25%;
   }
 }
 .circle-button-container {
@@ -282,7 +288,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 50%;
-  margin-top: -40%;
+  margin-top: -35%;
   margin-left: -3%;
 }
 
@@ -306,7 +312,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-left: -20%;
+  margin-left: -6%;
   margin-right: 10%;
 }
 
