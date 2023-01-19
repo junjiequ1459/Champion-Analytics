@@ -34,11 +34,6 @@ input[type=text] {
   color: orange;
 }
 
-@media (max-width: 720px) {
-  .fa-github {
-    display: none;
-  }
-}
 .fa-linkedin {
   position: fixed;
   bottom: 0;
@@ -50,6 +45,11 @@ input[type=text] {
 
 @media (max-width: 720px) {
   .fa-linkedin {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .fa-github {
     display: none;
   }
 }
