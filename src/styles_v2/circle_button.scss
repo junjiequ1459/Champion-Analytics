@@ -14,6 +14,7 @@
   height: 50%;
   border-radius: 50%;
   background-color: gray;
+  margin-left: 23%;
 }
 
 .circle-button-container img {
@@ -25,25 +26,16 @@
 .circle-button:hover {
   background-color: orange;
   cursor: pointer;
+  
 }
 .circle-button:hover + img {
   top: -85px;
   transition: top 0.2s ease-in-out;
+  border: 2px solid orange;
+
 }
 
 .circle-button:active {
   background-color: darkorange;
 }
 
-.ability_container {
-  position: absolute;
-  top: 110vh;
-  left: 15vw;
-}
-
-.ability_description {
-  width: 30%;
-  position: absolute;
-  top: 127vh;
-  left: 22vw;
-}

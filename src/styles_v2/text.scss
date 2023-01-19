@@ -1,0 +1,108 @@
+body {
+  color: white;
+  font-family: sans-serif;
+}
+
+#title_champ {
+  margin-top: -100px;
+  margin-bottom: 10px;
+  font-size: 6vw;
+  font-family: serif;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#title_nick {
+  margin-bottom: 100px;
+  font-family: serif;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 30px;
+}
+
+#champ_description {
+  max-width: 50%;
+  margin-left: 25%;
+  margin-bottom: 20%;
+}
+
+@media (max-width: 720px) {
+  #champ_description {
+    max-width: 90%;
+    margin-left: 5%;
+  }
+}
+
+.ability_name {
+  display: inline;
+  margin-bottom: 180px;
+}
+
+.ability_description {
+  margin-left: -37%;
+}
+
+.ability_name_description_container {
+  max-width: 30%;
+}
+
+@media (max-width: 720px) {
+  .ability_name_description_container {
+    max-width: 60%;
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: 720px) {
+  .all_circle_container {
+    max-width: 80%;
+  }
+}
+
+.canvas_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+}
+
+.circle-button-container {
+  margin-left: 5px;
+}
+
+.all_circle_container {
+  margin-left: 10%;
+  margin-top: -35%;
+}
+.ability_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#ability_video {
+  position: relative;
+  transform: scale(0.6);
+  display: flex;
+  flex-wrap: wrap;
+  width: 65vw;
+  margin-left: -80%;
+  margin-top: -15%;
+  border: 2px solid orange;
+
+}
+
+@media (max-width: 720px) {
+  #ability_video {
+    
+    transform: scale(1);
+    margin-left: -25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+  }
+}

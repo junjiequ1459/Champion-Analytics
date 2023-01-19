@@ -14,42 +14,34 @@
     <title>Champion Analytics</title>
   </head>
   <body>
+    
     <div id="form_container">
       <form>
         <input type="text" id="search-input" value="" />
         <i class="fa-solid fa-magnifying-glass"></i>
       </form>
     </div>
+
     <i class="fa-solid fa-question"></i>
     <i class="fa-solid fa-arrows-rotate"></i>
     <div id="help_paragraph_dive">
       <p id="help_paragraph">Use the Search bar to search for a League of Legends champion or use the refresh icon to generate a random champion. Some champion names include Ezreal, Blitzcrank, Ashe</p>
     </div>
-    <div class="main_image_container">
+
+    <div class="banner-card">
       <img id="main_img" src="" alt="" />
-      <img id="backround_img" src="" alt="" />
+      <p id="title_nick"></p>
+      <p id="title_champ"></p>
     </div>
 
-    <img
-      id="final_backround_img"
-      src="http://m.gettywallpapers.com/wp-content/uploads/2021/07/4k-League-Of-Legends-Wallpaper.jpg"
-      alt=""
-    />
-    <img
-      id="final_backround_img"
-      src="http://m.gettywallpapers.com/wp-content/uploads/2021/07/4k-League-Of-Legends-Wallpaper.jpg"
-      alt=""
-    />
-
-    <div class="header_container">
-      <h2 id="title_nick"></h2>
-      <h1 id="title_champ"></h1>
+    <img id="backround_img" src="" alt="" />
       <div class="description">
         <p id="champ_description"></p>
       </div>
-    </div>
-
+      
     <div class="ability_container">
+
+      <div class="all_circle_container">
       <div class="circle-button-container">
         <div class="circle-button" id="passive"></div>
         <img id="passive_icon" src="" alt="Button Image" />
@@ -71,17 +63,53 @@
         <div class="circle-button" id="abilityR"></div>
         <img id="R_icon" src="" alt="Button Image" />
       </div>
+      </div>
+
+      <div class="ability_name_description_container">
+      <h3 class="ability_name"></h3>
+      <p class="ability_description"></p>
+      <video autoplay loop muted="" id="ability_video">
+        <source id="source" src="" type="video/webm" alt="No-Video" />
+      </video>
     </div>
-    <h3 class="ability_name"></h3>
-    <p class="ability_description"></p>
 
-    <video autoplay loop muted="" id="ability_video">
-      <source id="source" src="" type="video/webm" alt="No-Video" />
-    </video>
+    <div class="canvas_container">
 
+      
+      <canvas id="statChart"></canvas>
+      <table class="table">
+        <tr>
+          <th>Champion Stats</th>
+        </tr>
+        <tr>
+          <td id="c_health"></td>
+          <td id="c_mana"></td>
+        </tr>
+        <tr>
+          <td id="c_health_regen"></td>
+          <td id="c_mana_regen"></td>
+        </tr>
+        <tr>
+          <td id="c_armor"></td>
+          <td id="c_attack_damage"></td>
+        </tr>
+        <tr>
+          <td id="c_magic_resist"></td>
+          <td id="c_crit"></td>
+        </tr>
+        <tr>
+          <td id="c_move_speed"></td>
+          <td id="c_attack_range"></td>
+        </tr>
+      </table>
+      
+  
     <select id="number-select"></select>
+    
+    </div>
+    
 
-    <p id="champ-stats"></p>
+
 
     <!-- <button id="sunfire">
       <img
@@ -89,34 +117,7 @@
         alt=""
       />
     </button> -->
-    <div class="canvas_container">
-      <canvas id="statChart"></canvas>
-    </div>
-    <table class="table">
-      <tr>
-        <th>Champion Stats</th>
-      </tr>
-      <tr>
-        <td id="c_health"></td>
-        <td id="c_mana"></td>
-      </tr>
-      <tr>
-        <td id="c_health_regen"></td>
-        <td id="c_mana_regen"></td>
-      </tr>
-      <tr>
-        <td id="c_armor"></td>
-        <td id="c_attack_damage"></td>
-      </tr>
-      <tr>
-        <td id="c_magic_resist"></td>
-        <td id="c_crit"></td>
-      </tr>
-      <tr>
-        <td id="c_move_speed"></td>
-        <td id="c_attack_range"></td>
-      </tr>
-    </table>
+
 
     <div id="skin_container">
       <img
@@ -125,6 +126,6 @@
         id="champ_skin"
       />
       <div id="button_skin_container"></div>
-    </div>
+    
   </body>
 </html>

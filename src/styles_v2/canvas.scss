@@ -1,0 +1,56 @@
+.canvas_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-top: -40%;
+  margin-left: -3%;
+}
+
+#number-select {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #333;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: -50%;
+  margin-right: -20%;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: -20%;
+  margin-right: 10%;
+}
+
+td {
+  padding-right: 50px;
+  margin-right: 50px;
+}
+
+@media (max-width: 720px) {
+  .table {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .canvas_container {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  #number-select {
+    display: none;
+  }
+}

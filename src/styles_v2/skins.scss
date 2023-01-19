@@ -1,0 +1,54 @@
+#button_skin_container {
+  width: 5%;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+#skin_container {
+  margin-top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%;
+  margin-left: 15%;
+  margin-bottom: 10%;}
+.skin_button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-color: orange;
+  width: 200px;
+  height: 45px;
+}
+
+.skin_button:hover {
+  background-color: darkorange;
+  cursor: pointer;
+}
+
+#champ_skin {
+  height: auto;
+  width: 100%;
+  border: 2px solid orange;
+
+}
+
+@media (max-width: 720px) {
+  #button_skin_container {
+    display: inline;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 720px) {
+  #skin_container {
+    display: inline;
+  }
+}
+
+@media (max-width: 720px) {
+  .skin_button {
+    width: auto;
+    height: auto;
+  }
+}

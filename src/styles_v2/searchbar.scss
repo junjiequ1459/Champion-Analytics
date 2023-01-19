@@ -18,7 +18,7 @@ input[type="text"] {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
   border-width: 5px;
-  border-color: orange;
+  border-color:rgba($color: orange, $alpha: 0.5);
   color: white;
 }
 
