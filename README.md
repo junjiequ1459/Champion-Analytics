@@ -37,8 +37,8 @@ If you have any questions or issues, please email me at junjiequ123@gmail.com
 
 
 ## Screenshots
-![Screenshot of my application](screenshots/web2.png)
-![Screenshot of my application](screenshots/web3.png)
-![Screenshot of my application](screenshots/web1.png)
+![Screenshot of my application](screenshots/home_page.png)
+![Screenshot of my application](screenshots/stats_page.png)
+![Screenshot of my application](screenshots/skin_page.png)
 ![Screenshot of my application](screenshots/mobile1.png)
 ![Screenshot of my application](screenshots/mobile2.png)
