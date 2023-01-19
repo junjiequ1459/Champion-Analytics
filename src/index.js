@@ -23,6 +23,7 @@ refresh.addEventListener("click", function (event) {
   event.preventDefault();
   let randomChampName = result[Math.floor(Math.random() * result.length)];
   displayStatAndItem(randomChampName);
+  remove_button();
 });
 
 questionMark.addEventListener("hover", function (event) {

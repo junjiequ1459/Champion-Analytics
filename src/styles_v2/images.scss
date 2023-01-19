@@ -19,15 +19,15 @@
 
 #main_img {
   max-width: 75%;
-  //   position: absolute;
-  //   left: 0;
-  //   right: 0;
-  //   margin: auto;
-  //   z-index: 0;
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // margin: auto;
+    // z-index: 0;
 }
 
 @media (max-width: 720px) {
   #main_img {
-    max-width: 90%;
+    max-width: 110%;
   }
 }

@@ -11,7 +11,8 @@
   justify-content: center;
   max-width: 70%;
   margin-left: 15%;
-  margin-bottom: 10%;}
+  margin-bottom: 10%;
+}
 .skin_button {
   padding: 10px;
   background-color: black;
@@ -30,7 +31,6 @@
   height: auto;
   width: 100%;
   border: 2px solid orange;
-
 }
 
 @media (max-width: 720px) {
@@ -43,6 +43,9 @@
 @media (max-width: 720px) {
   #skin_container {
     display: inline;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0%;
   }
 }
 

@@ -4,7 +4,8 @@ export function buttonClick(json, champName) {
   const videoSource = document.querySelector("#ability_video");
   const source = document.querySelector("#source");
 
-  passive.addEventListener("click", function () {
+  passive.addEventListener("click", function (event) {
+    event.preventDefault();
     document.querySelector(".ability_description").innerText =
       json.data[champName].passive.description;
     document.querySelector(".ability_name").innerText =
@@ -13,7 +14,8 @@ export function buttonClick(json, champName) {
     videoSource.load();
   });
 
-  abilityQ.addEventListener("click", function () {
+  abilityQ.addEventListener("click", function (event) {
+    event.preventDefault();
     document.querySelector(".ability_description").innerText =
       json.data[champName].spells["0"].description;
     document.querySelector(".ability_name").innerText =
@@ -22,7 +24,8 @@ export function buttonClick(json, champName) {
     videoSource.load();
   });
 
-  abilityW.addEventListener("click", function () {
+  abilityW.addEventListener("click", function (event) {
+    event.preventDefault();
     document.querySelector(".ability_description").innerText =
       json.data[champName].spells["1"].description;
     document.querySelector(".ability_name").innerText =
@@ -31,7 +34,8 @@ export function buttonClick(json, champName) {
     videoSource.load();
   });
 
-  abilityE.addEventListener("click", function () {
+  abilityE.addEventListener("click", function (event) {
+    event.preventDefault();
     document.querySelector(".ability_description").innerText =
       json.data[champName].spells["2"].description;
     document.querySelector(".ability_name").innerText =
@@ -41,7 +45,8 @@ export function buttonClick(json, champName) {
     videoSource.load();
   });
 
-  abilityR.addEventListener("click", function () {
+  abilityR.addEventListener("click", function (event) {
+    event.preventDefault();
     document.querySelector(".ability_description").innerText =
       json.data[champName].spells["3"].description;
     document.querySelector(".ability_name").innerText =

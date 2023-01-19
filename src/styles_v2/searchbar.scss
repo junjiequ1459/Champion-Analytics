@@ -18,7 +18,7 @@ input[type="text"] {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
   border-width: 5px;
-  border-color:rgba($color: orange, $alpha: 0.5);
+  border-color: rgba($color: orange, $alpha: 0.5);
   color: white;
 }
 
@@ -40,6 +40,15 @@ input[type="text"] {
   z-index: 2;
 }
 
+@media (max-width: 720px) {
+  .fa-arrows-rotate {
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 90%;
+    z-index: 2;
+  }
+}
+
 .fa-arrows-rotate:hover {
   cursor: pointer;
 }
@@ -56,6 +65,12 @@ input[type="text"] {
   margin-left: 70%;
   color: transparent;
   z-index: 2;
+}
+
+@media (max-width: 720px) {
+  #help_paragraph {
+    display: none;
+  }
 }
 
 #help_paragraph:hover {

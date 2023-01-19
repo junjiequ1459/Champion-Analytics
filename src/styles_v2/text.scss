@@ -76,6 +76,8 @@ body {
   margin-top: -35%;
 }
 .ability_container {
+  height: auto;
+  margin-top: 200px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -91,18 +93,16 @@ body {
   margin-left: -80%;
   margin-top: -15%;
   border: 2px solid orange;
-
 }
 
 @media (max-width: 720px) {
   #ability_video {
-    
-    transform: scale(1);
-    margin-left: -25%;
+    transform: scale(1.47);
+    margin-left: -24%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 20%;
+    margin-top: 30%;
   }
 }
