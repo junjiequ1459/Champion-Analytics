@@ -9,7 +9,7 @@
 }
 
 #number-select {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   background-color: #333;
@@ -19,7 +19,7 @@
   border: none;
   cursor: pointer;
   margin-top: -10%;
-  margin-right: -20%;
+  margin-right: -50%;
 }
 
 .table {
@@ -27,7 +27,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100%;  
   margin-left: -6%;
   margin-right: 10%;
 }

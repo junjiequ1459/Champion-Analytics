@@ -13,6 +13,11 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 720px) {
+  #title_champ  {
+    font-size: 12vw;
+  }
+}
 #title_nick {
   margin-bottom: 100px;
   font-family: serif;

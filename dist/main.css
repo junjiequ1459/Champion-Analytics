@@ -20,8 +20,8 @@ input[type=text] {
   position: fixed;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
-  border-width: 5px;
-  border-color: rgba(255, 165, 0, 0.5);
+  border-width: 1px;
+  border-color: rgba(255, 165, 0, 0.2);
   color: white;
 }
 
@@ -140,6 +140,11 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 720px) {
+  #title_champ {
+    font-size: 12vw;
+  }
+}
 #title_nick {
   margin-bottom: 100px;
   font-family: serif;
@@ -293,7 +298,7 @@ body {
 }
 
 #number-select {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   background-color: #333;
@@ -303,7 +308,7 @@ body {
   border: none;
   cursor: pointer;
   margin-top: -10%;
-  margin-right: -20%;
+  margin-right: -50%;
 }
 
 .table {

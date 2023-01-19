@@ -17,8 +17,8 @@ input[type="text"] {
   position: fixed;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
-  border-width: 5px;
-  border-color: rgba($color: orange, $alpha: 0.5);
+  border-width: 1px;
+  border-color: rgba($color: orange, $alpha: 0.2);
   color: white;
 }
 
@@ -44,6 +44,7 @@ input[type="text"] {
   margin-top: 30px;
   margin-left: 240px;
   z-index: 1;
+  // opacity: 0.;
 }
 
 .fa-magnifying-glass:hover {
