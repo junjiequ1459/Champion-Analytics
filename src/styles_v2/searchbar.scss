@@ -25,18 +25,30 @@ input[type="text"] {
 .fa-github {
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 5;
   z-index: 2;
   font-size: 60px;
   color: orange;
 }
+
+@media (max-width: 720px) {
+  .fa-github {
+    display: none;
+  }
+}
 .fa-linkedin {
   position: fixed;
   bottom: 0;
-  left: 80px;
+  left: 85px;
   z-index: 2;
   font-size: 60px;
   color: orange;
+}
+
+@media (max-width: 720px) {
+  .fa-linkedin {
+    display: none;
+  }
 }
 
 .fa-magnifying-glass {
@@ -49,11 +61,12 @@ input[type="text"] {
 
 .fa-magnifying-glass:hover {
   cursor: pointer;
+  color: orange;
 }
 
 .fa-arrows-rotate {
   position: fixed;
-  margin-top: 10px;
+  margin-top: 7px;
   margin-left: 285px;
   z-index: 2;
 }
@@ -61,7 +74,7 @@ input[type="text"] {
 @media (max-width: 720px) {
   .fa-arrows-rotate {
     position: fixed;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 90%;
     z-index: 2;
   }
@@ -69,12 +82,13 @@ input[type="text"] {
 
 .fa-arrows-rotate:hover {
   cursor: pointer;
+  color: orange;
 }
 
 .fa-question {
   position: fixed;
   margin-top: 10px;
-  margin-left: 99%;
+  margin-left: 98%;
   z-index: 2;
 }
 
@@ -82,6 +96,7 @@ input[type="text"] {
   position: fixed;
   margin-left: 70%;
   color: transparent;
+  margin-top: -0.5%;
   z-index: 2;
 }
 
@@ -93,7 +108,8 @@ input[type="text"] {
 
 #help_paragraph:hover {
   color: white;
-  background-color: darkorange;
+  background-color: black;
   border-radius: 10px;
   padding: 10px;
+  border: 1px solid orange;
 }

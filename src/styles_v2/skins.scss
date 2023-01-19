@@ -2,6 +2,7 @@
   width: 5%;
   height: auto;
   flex-wrap: wrap;
+
 }
 
 #skin_container {
@@ -52,7 +53,5 @@
 @media (max-width: 720px) {
   .skin_button {
     width: auto;
-    height: auto;
   }
 }
-
