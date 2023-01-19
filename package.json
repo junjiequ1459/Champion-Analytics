@@ -1,8 +1,8 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",  
+  "description": "Champion Analytics is a comprehensive data visualization tool designed for the popular MOBA game, League of Legends. By leveraging data from Riot Games' ddragon API, it offers a thorough and insightful representation of champion statistics, lore, abilities, and descriptions. The user experience is enhanced through the ability to interact with the visualizer by selecting a champion level between 1 and 18, resulting in real-time updates to the champion's statistics. Additionally, the visualizer includes a feature that allows the user to select up to six items and observe the corresponding dynamic updates to the champion's statistics. Among its various capabilities, the visualizer also offers video demonstrations of champion abilities, as well as a dedicated section displaying the champion's various skins.",
+  "main": "index.js",
   "browserslist": [
     "defaults"
   ],
@@ -18,7 +18,7 @@
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "babel-loader": "^9.1.2",
-    "core-js": "^3.27.1",
+    "core-js": "^3.27.2",
     "css-loader": "^6.7.3",
     "mini-css-extract-plugin": "^2.7.2",
     "regenerator-runtime": "^0.13.11",
@@ -26,5 +26,13 @@
     "sass-loader": "^13.2.0",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junjiequ1459/Champion-Analytics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/junjiequ1459/Champion-Analytics/issues"
+  },
+  "homepage": "https://github.com/junjiequ1459/Champion-Analytics#readme"
 }

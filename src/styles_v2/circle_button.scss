@@ -29,13 +29,16 @@
   
 }
 .circle-button:hover + img {
-  top: -85px;
+  top: -120px;
   transition: top 0.2s ease-in-out;
   border: 2px solid orange;
 
 }
 
 .circle-button:active {
+  background-color: darkorange;
+}
+.circle-button::after {
   background-color: darkorange;
 }
 

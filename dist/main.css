@@ -145,6 +145,7 @@ body {
 .ability_name {
   display: inline;
   margin-bottom: 180px;
+  margin-left: 15%;
 }
 
 .ability_description {
@@ -244,12 +245,16 @@ body {
 }
 
 .circle-button:hover + img {
-  top: -85px;
+  top: -120px;
   transition: top 0.2s ease-in-out;
   border: 2px solid orange;
 }
 
 .circle-button:active {
+  background-color: darkorange;
+}
+
+.circle-button::after {
   background-color: darkorange;
 }
 
