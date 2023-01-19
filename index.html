@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/main.css" />
-    <link rel="shortcut icon" href="./src/assets/mid.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/assets/mid.png" type="image/x-icon" />
     <script
       src="https://kit.fontawesome.com/8f8e6fbefd.js"
       crossorigin="anonymous"
     ></script>
     <script src="./dist/main.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+    <a href="https://github.com/junjiequ1459" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/junjie-qu-239070169/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
     <title>Champion Analytics</title>
   </head>
   <body>
-    
     <div id="form_container">
       <form>
         <input type="text" id="search-input" value="" />
@@ -26,7 +32,11 @@
     <i class="fa-solid fa-question"></i>
     <i class="fa-solid fa-arrows-rotate"></i>
     <div id="help_paragraph_dive">
-      <p id="help_paragraph">Use the Search bar to search for a League of Legends champion or use the refresh icon to generate a random champion. Some champion names include Ezreal, Blitzcrank, Ashe</p>
+      <p id="help_paragraph">
+        Use the Search bar to search for a League of Legends champion or use the
+        refresh icon to generate a random champion. Some champion names include
+        Ezreal, Blitzcrank, Ashe
+      </p>
     </div>
 
     <div class="banner-card">
@@ -36,47 +46,54 @@
     </div>
 
     <img id="backround_img" src="" alt="" />
-      <div class="description">
-        <p id="champ_description"></p>
-      </div>
-      
+    <div class="description">
+      <p id="champ_description"></p>
+    </div>
+
     <div class="ability_container">
-
       <div class="all_circle_container">
-      <div class="circle-button-container">
-        <div class="circle-button" id="passive"></div>
-        <img id="passive_icon" src="" alt="Button Image" />
-      </div>
+        <div class="circle-button-container">
+          <div class="circle-button" id="passive"></div>
+          <img id="passive_icon" src="" alt="Button Image" />
+        </div>
 
-      <div class="circle-button-container">
-        <div class="circle-button" id="abilityQ"></div>
-        <img id="Q_icon" src="" alt="Button Image" />
-      </div>
-      <div class="circle-button-container">
-        <div class="circle-button" id="abilityW"></div>
-        <img id="W_icon" src="" alt="Button Image" />
-      </div>
-      <div class="circle-button-container">
-        <div class="circle-button" id="abilityE"></div>
-        <img id="E_icon" src="" alt="Button Image" />
-      </div>
-      <div class="circle-button-container">
-        <div class="circle-button" id="abilityR"></div>
-        <img id="R_icon" src="" alt="Button Image" />
-      </div>
+        <div class="circle-button-container">
+          <div class="circle-button" id="abilityQ"></div>
+          <img id="Q_icon" src="" alt="Button Image" />
+        </div>
+
+        <div class="circle-button-container">
+          <div class="circle-button" id="abilityW"></div>
+          <img id="W_icon" src="" alt="Button Image" />
+        </div>
+
+        <div class="circle-button-container">
+          <div class="circle-button" id="abilityE"></div>
+          <img id="E_icon" src="" alt="Button Image" />
+        </div>
+
+        <div class="circle-button-container">
+          <div class="circle-button" id="abilityR"></div>
+          <img id="R_icon" src="" alt="Button Image" />
+        </div>
       </div>
 
       <div class="ability_name_description_container">
-      <h3 class="ability_name"></h3>
-      <p class="ability_description"></p>
-      <video autoplay loop muted="" id="ability_video" poster="./src/assets/novideo.png">
-        <source id="source" src="" type="video/webm" alt="No-Video" />
-      </video>
+        <h3 class="ability_name"></h3>
+        <p class="ability_description"></p>
+        <video
+          autoplay
+          loop
+          muted=""
+          id="ability_video"
+          poster="./src/assets/novideo.png"
+        >
+          <source id="source" src="" type="video/webm" alt="No-Video" />
+        </video>
+      </div>
     </div>
 
     <div class="canvas_container">
-
-      
       <canvas id="statChart"></canvas>
       <table class="table">
         <tr>
@@ -103,23 +120,9 @@
           <td id="c_attack_range"></td>
         </tr>
       </table>
-      
-  
-    <select id="number-select"></select>
-    
+
+      <select id="number-select"></select>
     </div>
-    
-
-
-
-    <!-- <button id="sunfire">
-      <img
-        src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/item/3068.png"
-        alt=""
-      />
-    </button> -->
-
-
     <div id="skin_container">
       <img
         src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_1.jpg"
@@ -127,6 +130,6 @@
         id="champ_skin"
       />
       <div id="button_skin_container"></div>
-    
+    </div>
   </body>
 </html>
