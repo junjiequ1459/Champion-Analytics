@@ -9,8 +9,7 @@ const questionMark = document.querySelector(".fa-question");
 const search = document.querySelector(".fa-magnifying-glass");
 let result = displayStatAndItem(champName);
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
+form.addEventListener("submit", function () {
   const searchInput = document.querySelector("#search-input");
   champName = searchInput.value; // .toLowerCase();
   // let cleanChampName = champName[0].toUpperCase() + champName.slice(1);
