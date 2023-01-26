@@ -9,13 +9,10 @@ const questionMark = document.querySelector(".fa-question");
 const search = document.querySelector(".fa-magnifying-glass");
 let result = displayStatAndItem(champName);
 
-form.addEventListener("submit", function () {
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
   const searchInput = document.querySelector("#search-input");
-  champName = searchInput.value; // .toLowerCase();
-  // let cleanChampName = champName[0].toUpperCase() + champName.slice(1);
-  // if (cleanChampName === "Wukong") {
-  //   cleanChampName = "MonkeyKing";
-  // }
+  champName = searchInput.value;
 
   if (champName === "Wukong") {
     champName = "MonkeyKing";

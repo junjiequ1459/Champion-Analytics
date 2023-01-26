@@ -23,7 +23,6 @@ function changeStatByItem(champstat, itemStat) {
   return dupObj;
 }
 
-export default changeStatByItem;
 
 //sunfire
 // stats: Object { FlatHPPoolMod: 500, FlatArmorMod: 50 }
