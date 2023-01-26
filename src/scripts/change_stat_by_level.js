@@ -2,7 +2,6 @@ export function changeStatByLevel(data) {
   let select = document.querySelector("#number-select");
   select.addEventListener("change", function () {
     let selectedNumber = select.value;
-    console.log(selectedNumber)
     if (selectedNumber === "1") {
       document.querySelector("#c_health").innerText = `Health : ${JSON.stringify(data.hp)}`;
       document.querySelector("#c_mana").innerText = `Mana : ${JSON.stringify(data.mp)}`;
