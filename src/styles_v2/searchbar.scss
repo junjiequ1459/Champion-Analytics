@@ -16,10 +16,17 @@ input[type="text"] {
   font-size: 16px;
   position: fixed;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-width: 1px;
-  border-color: rgba($color: orange, $alpha: 0.2);
+  background-color: rgba(0, 0, 0);
+  border-width: 3px;
+  border-color: rgba($color: orange, $alpha: 1);
   color: white;
+}
+
+@media (max-width: 720px) {
+  input[type="text"] {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba($color: orange, $alpha: 0.2);
+  }
 }
 
 .fa-github {
@@ -88,9 +95,15 @@ input[type="text"] {
 
 .fa-question {
   position: fixed;
-  margin-top: 10px;
-  margin-left: 98%;
+  margin-top: 0.5%;
+  margin-left: 97%;
   z-index: 2;
+  font-size: 32px;
+}
+@media (max-width: 720px) {
+  .fa-question {
+    display: none;
+  }
 }
 
 #help_paragraph {
