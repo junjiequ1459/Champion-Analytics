@@ -4,6 +4,7 @@ import { statChart } from "./charts";
 import { allQuerys } from "./querySelectors";
 import { generate_button } from "./generate_button_on_skin";
 import { skinButtonClick } from "./skin_button_click";
+import { remove_button } from "./generate_button_on_skin";
 
 const championApiUrl =
   "https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/championFull.json";
@@ -15,6 +16,7 @@ export function displayStatAndItem(champName) {
       let champData = data;
       try {
         let skinAmount = champData.data[champName].skins.length;
+        remove_button();
         for (let key in champData.data) {
           allChampArray.push(key);
         }

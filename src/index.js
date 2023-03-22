@@ -19,7 +19,6 @@ form.addEventListener("submit", function (e) {
   }
 
   displayStatAndItem(champName);
-  remove_button();
   searchInput.value = "";
 });
 
@@ -27,7 +26,6 @@ refresh.addEventListener("click", function (event) {
   event.preventDefault();
   let randomChampName = result[Math.floor(Math.random() * result.length)];
   displayStatAndItem(randomChampName);
-  remove_button();
 });
 
 questionMark.addEventListener("hover", function (event) {
@@ -41,7 +39,6 @@ search.addEventListener("click", function (event) {
   let cleanChampName = champName[0].toUpperCase() + champName.slice(1);
   createDropDown();
   displayStatAndItem(cleanChampName);
-  remove_button();
 });
 
 createDropDown();
