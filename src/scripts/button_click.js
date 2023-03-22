@@ -16,8 +16,9 @@ export function buttonClick(json, champName) {
 
   abilityQ.addEventListener("click", function (event) {
     event.preventDefault();
-    document.querySelector(".ability_description").innerText =
-      json.data[champName].spells["0"].description;
+    document.querySelector(".ability_description").innerText = json.data[
+      champName
+    ].spells["0"].description.replace(/<br\s*\/?>/gi, "");
     document.querySelector(".ability_name").innerText =
       json.data[champName].spells["0"].name;
     source.src = `https://d28xe8vt774jo5.cloudfront.net/champion-abilities/${champKey}/ability_${champKey}_Q1.webm`;
@@ -26,8 +27,9 @@ export function buttonClick(json, champName) {
 
   abilityW.addEventListener("click", function (event) {
     event.preventDefault();
-    document.querySelector(".ability_description").innerText =
-      json.data[champName].spells["1"].description;
+    document.querySelector(".ability_description").innerText = json.data[
+      champName
+    ].spells["1"].description.replace(/<br\s*\/?>/gi, "");
     document.querySelector(".ability_name").innerText =
       json.data[champName].spells["1"].name;
     source.src = `https://d28xe8vt774jo5.cloudfront.net/champion-abilities/${champKey}/ability_${champKey}_W1.webm`;
@@ -36,8 +38,9 @@ export function buttonClick(json, champName) {
 
   abilityE.addEventListener("click", function (event) {
     event.preventDefault();
-    document.querySelector(".ability_description").innerText =
-      json.data[champName].spells["2"].description;
+    document.querySelector(".ability_description").innerText = json.data[
+      champName
+    ].spells["2"].description.replace(/<br\s*\/?>/gi, "");
     document.querySelector(".ability_name").innerText =
       json.data[champName].spells["2"].name;
     source.src = `https://d28xe8vt774jo5.cloudfront.net/champion-abilities/${champKey}/ability_${champKey}_E1.webm`;
@@ -47,8 +50,9 @@ export function buttonClick(json, champName) {
 
   abilityR.addEventListener("click", function (event) {
     event.preventDefault();
-    document.querySelector(".ability_description").innerText =
-      json.data[champName].spells["3"].description;
+    document.querySelector(".ability_description").innerText = json.data[
+      champName
+    ].spells["3"].description.replace(/<br\s*\/?>/gi, "");
     document.querySelector(".ability_name").innerText =
       json.data[champName].spells["3"].name;
     source.src = `https://d28xe8vt774jo5.cloudfront.net/champion-abilities/${champKey}/ability_${champKey}_R1.webm`;

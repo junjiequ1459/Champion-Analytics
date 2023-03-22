@@ -30,7 +30,19 @@ export function displayStatAndItem(champName) {
         generate_button(champData, champName, skinAmount);
         skinButtonClick(champName);
       } catch (error) {
-        alert("Champion does not exist, check for capitalization?");
+        let modal = document.createElement("div");
+        modal.classList.add("modal");
+        modal.addEventListener("click", function () {
+          modal.style.display = "none";
+        });
+        let modalContent = document.createElement("div");
+        modalContent.classList.add("modal-content");
+        let errorMessage = document.createElement("p");
+        errorMessage.textContent =
+          "Champion does not exist, check for capitalization?";
+        modalContent.appendChild(errorMessage);
+        modal.appendChild(modalContent);
+        document.body.appendChild(modal);
       }
     });
   return allChampArray;

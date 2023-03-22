@@ -270,6 +270,24 @@ body {
     margin-bottom: 25%;
   }
 }
+.modal {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 330vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  font-size: 48px;
+  font-family: sans-serif;
+}
+
+.modal p {
+  margin-top: 30%;
+}
+
 .circle-button-container {
   position: relative;
   margin-top: 100px;
@@ -278,40 +296,14 @@ body {
   display: inline-block;
 }
 
-.circle-button {
-  position: absolute;
-  top: 20;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
-  background-color: gray;
-  margin-left: 23%;
-}
-
 .circle-button-container img {
   position: absolute;
   top: -80px;
   width: 100%;
 }
 
-.circle-button:hover {
-  background-color: orange;
-  cursor: pointer;
-}
-
-.circle-button:hover + img {
-  top: -120px;
-  transition: top 0.2s ease-in-out;
+.circle-button-container img:hover {
   border: 2px solid orange;
-}
-
-.circle-button:active {
-  background-color: darkorange;
-}
-
-.circle-button::after {
-  background-color: darkorange;
 }
 
 .canvas_container {
@@ -373,8 +365,11 @@ td {
   flex-wrap: wrap;
 }
 
+.skin-container-div {
+  margin-top: 200px;
+}
+
 #skin_container {
-  margin-top: 20%;
   display: flex;
   align-items: center;
   justify-content: center;

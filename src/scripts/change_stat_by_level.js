@@ -3,32 +3,58 @@ export function changeStatByLevel(data) {
   select.addEventListener("change", function () {
     let selectedNumber = select.value;
     if (selectedNumber === "1") {
-      document.querySelector("#c_health").innerText = `Health : ${JSON.stringify(data.hp)}`;
-      document.querySelector("#c_mana").innerText = `Mana : ${JSON.stringify(data.mp)}`;
-      document.querySelector("#c_health_regen").innerText = `HealthRegen : ${JSON.stringify(data.hpregen)}`;
-      document.querySelector("#c_mana_regen").innerText = `ManaRegen : ${JSON.stringify(data.mpregen)}`;
-      document.querySelector("#c_armor").innerText = `Armor : ${JSON.stringify(data.armor)}`;
-      document.querySelector("#c_attack_damage").innerText = `AttackDamage : ${JSON.stringify(data.attackdamage)}`;
-      document.querySelector("#c_magic_resist").innerText = `MagicResist : ${JSON.stringify(data.spellblock)}`;
-      document.querySelector("#c_crit").innerText = `Crit : ${JSON.stringify(data.crit)}`;
-      document.querySelector("#c_move_speed").innerText = `MoveSpeed : ${JSON.stringify(data.movespeed)}`;
-      document.querySelector("#c_attack_range").innerText = `AttackRange : ${JSON.stringify(data.attackrange)}`;
+      document.querySelector("#c_health").innerText = `Health : ${data.hp}`;
+      document.querySelector("#c_mana").innerText = `Mana : ${data.mp}`;
+      document.querySelector(
+        "#c_health_regen"
+      ).innerText = `HealthRegen : ${data.hpregen}`;
+      document.querySelector(
+        "#c_mana_regen"
+      ).innerText = `ManaRegen : ${data.mpregen}`;
+      document.querySelector("#c_armor").innerText = `Armor : ${data.armor}`;
+      document.querySelector(
+        "#c_attack_damage"
+      ).innerText = `AttackDamage : ${data.attackdamage}`;
+      document.querySelector(
+        "#c_magic_resist"
+      ).innerText = `MagicResist : ${data.spellblock}`;
+      document.querySelector("#c_crit").innerText = `Crit : ${data.crit}`;
+      document.querySelector(
+        "#c_move_speed"
+      ).innerText = `MoveSpeed : ${data.movespeed}`;
+      document.querySelector(
+        "#c_attack_range"
+      ).innerText = `AttackRange : ${data.attackrange}`;
       return data;
     } else {
       let dupObj = { ...data };
 
       dupObj = { ...addStats(dupObj, select.value) };
 
-      document.querySelector("#c_health").innerText = `Health : ${JSON.stringify(dupObj.hp)}`;
-      document.querySelector("#c_mana").innerText = `Mana : ${JSON.stringify(dupObj.mp)}`;
-      document.querySelector("#c_health_regen").innerText = `HealthRegen : ${JSON.stringify((dupObj.hpregen).toFixed(1))}`;
-      document.querySelector("#c_mana_regen").innerText = `ManaRegen : ${JSON.stringify((dupObj.mpregen).toFixed(1))}`;
-      document.querySelector("#c_armor").innerText = `Armor : ${JSON.stringify((dupObj.armor).toFixed(1))}`;
-      document.querySelector("#c_attack_damage").innerText = `AttackDamage : ${JSON.stringify(dupObj.attackdamage)}`;
-      document.querySelector("#c_magic_resist").innerText = `MagicResist : ${JSON.stringify((dupObj.spellblock).toFixed(1))}`;
-      document.querySelector("#c_crit").innerText = `Crit : ${JSON.stringify(dupObj.crit)}`;
-      document.querySelector("#c_move_speed").innerText = `MoveSpeed : ${JSON.stringify(dupObj.movespeed)}`;
-      document.querySelector("#c_attack_range").innerText = `AttackRange : ${JSON.stringify(dupObj.attackrange)}`;
+      document.querySelector("#c_health").innerText = `Health : ${dupObj.hp}`;
+      document.querySelector("#c_mana").innerText = `Mana : ${dupObj.mp}`;
+      document.querySelector(
+        "#c_health_regen"
+      ).innerText = `HealthRegen : ${dupObj.hpregen.toFixed(0)}`;
+      document.querySelector(
+        "#c_mana_regen"
+      ).innerText = `ManaRegen : ${dupObj.mpregen.toFixed(0)}`;
+      document.querySelector(
+        "#c_armor"
+      ).innerText = `Armor : ${dupObj.armor.toFixed(0)}`;
+      document.querySelector(
+        "#c_attack_damage"
+      ).innerText = `AttackDamage : ${dupObj.attackdamage.toFixed(0)}`;
+      document.querySelector(
+        "#c_magic_resist"
+      ).innerText = `MagicResist : ${dupObj.spellblock.toFixed(0)}`;
+      document.querySelector("#c_crit").innerText = `Crit : ${dupObj.crit}`;
+      document.querySelector(
+        "#c_move_speed"
+      ).innerText = `MoveSpeed : ${dupObj.movespeed}`;
+      document.querySelector(
+        "#c_attack_range"
+      ).innerText = `AttackRange : ${dupObj.attackrange}`;
       return dupObj;
     }
   });
